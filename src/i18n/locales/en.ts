@@ -1,0 +1,103 @@
+import type { Translation } from '../types';
+
+/**
+ * English texts (prepared for the UK launch – not active yet).
+ * Must contain exactly the same keys as de.ts (checked by TypeScript and tests).
+ */
+export const en: Translation = {
+  common: {
+    loading: 'Loading …',
+    retry: 'Try again',
+    errorTitle: 'Something went wrong',
+    errorBody: 'Please check your internet connection and try again.',
+    comingSoon: 'Coming soon',
+    estimate: 'Estimate',
+    preview: 'Preview',
+    back: 'Back',
+  },
+  tabs: {
+    overview: 'Overview',
+    plan: 'Plan',
+    recipes: 'Recipes',
+    shopping: 'Shopping',
+    profile: 'Profile',
+  },
+  overview: {
+    greeting: 'Hello!',
+    subtitle: 'Plan well, shop for less, waste less.',
+    budgetTitle: 'Your weekly budget',
+    previewNotice: 'Sample values for preview. Your real figures appear once you have set up your profile.',
+    weeklyBudget: 'Budget',
+    estimatedSpend: 'Estimated spend',
+    remaining: 'Remaining',
+    perPerson: 'Per person',
+    perMeal: 'Per meal',
+    setupTitle: "Let's get started",
+    setupBody: 'Tell us how many people eat with you and what your budget is. Then we will create your first meal plan.',
+    setupButton: 'Set up household',
+  },
+  plan: {
+    title: 'Meal plan',
+    week: 'This week: {{range}}',
+    emptyTitle: 'No meal plan yet',
+    emptyBody: 'Your seven-day plan will appear here – breakfast, lunch and dinner, matched to your budget.',
+    generate: 'Create meal plan',
+    breakfast: 'Breakfast',
+    lunch: 'Lunch',
+    dinner: 'Dinner',
+  },
+  recipes: {
+    title: 'Recipes',
+    subtitle: 'Simple, affordable family recipes',
+    emptyTitle: 'Recipes coming soon',
+    emptyBody: 'We are preparing more than 50 everyday recipes – from classics to quick meals for children.',
+    filters: {
+      vegetarian: 'Vegetarian',
+      quick: 'Quick',
+      kidFriendly: 'Kid-friendly',
+      highProtein: 'High protein',
+      budget: 'Budget',
+    },
+  },
+  shopping: {
+    title: 'Shopping list',
+    emptyTitle: 'Your shopping list is empty',
+    emptyBody: 'Once you have a meal plan, we will create your shopping list automatically – grouped by supermarket section.',
+  },
+  profile: {
+    title: 'Profile',
+    sectionAccount: 'Account',
+    signIn: 'Sign in or register',
+    sectionHousehold: 'Household',
+    household: 'Household & budget',
+    preferences: 'Diet & allergies',
+    supermarkets: 'Preferred supermarkets',
+    sectionInfo: 'Legal & information',
+    priceInfo: 'How we calculate prices',
+    privacy: 'Privacy policy',
+    imprint: 'Legal notice',
+    terms: 'Terms of use',
+    version: 'Version {{version}}',
+    sectionDeveloper: 'Developer info',
+    supabaseStatus: 'Database connection',
+    statusConnected: 'Connected',
+    statusNotConfigured: 'Not set up',
+    statusUnreachable: 'Not reachable',
+    statusChecking: 'Checking …',
+  },
+  legal: {
+    draftNotice: 'Placeholder – this text will be written and reviewed by a qualified professional before launch.',
+    privacyTitle: 'Privacy policy',
+    imprintTitle: 'Legal notice',
+    termsTitle: 'Terms of use',
+    priceInfoTitle: 'How we calculate prices',
+    priceInfoBody:
+      'All prices in the app are estimates. They are based on a price list we maintain, with source and date, and may differ in store. Current offers and regional differences are not included. Comparisons between supermarkets are approximate when products are not identical.',
+    allergenNotice: 'Allergen information is provided without guarantee. Always check the ingredient list on the packaging.',
+  },
+  notFound: {
+    title: 'Page not found',
+    body: 'Sorry, this page does not exist.',
+    home: 'Go to overview',
+  },
+};

@@ -1,0 +1,103 @@
+/**
+ * German texts (default language).
+ * Tone: friendly, informal "du" – common for German family and food apps.
+ * All visible text belongs here, never directly in screen code.
+ */
+export const de = {
+  common: {
+    loading: 'Wird geladen …',
+    retry: 'Erneut versuchen',
+    errorTitle: 'Da ist etwas schiefgelaufen',
+    errorBody: 'Bitte prüfe deine Internetverbindung und versuche es noch einmal.',
+    comingSoon: 'Kommt bald',
+    estimate: 'Schätzung',
+    preview: 'Vorschau',
+    back: 'Zurück',
+  },
+  tabs: {
+    overview: 'Übersicht',
+    plan: 'Plan',
+    recipes: 'Rezepte',
+    shopping: 'Einkauf',
+    profile: 'Profil',
+  },
+  overview: {
+    greeting: 'Hallo!',
+    subtitle: 'Gut planen, günstig einkaufen, weniger wegwerfen.',
+    budgetTitle: 'Dein Wochenbudget',
+    previewNotice: 'Beispielwerte zur Vorschau. Deine echten Zahlen erscheinen, sobald du dein Profil eingerichtet hast.',
+    weeklyBudget: 'Budget',
+    estimatedSpend: 'Geschätzte Ausgaben',
+    remaining: 'Noch übrig',
+    perPerson: 'Pro Person',
+    perMeal: 'Pro Mahlzeit',
+    setupTitle: 'Lass uns starten',
+    setupBody: 'Erzähl uns kurz, wie viele Personen bei dir mitessen und wie hoch dein Budget ist. Dann erstellen wir deinen ersten Wochenplan.',
+    setupButton: 'Haushalt einrichten',
+  },
+  plan: {
+    title: 'Wochenplan',
+    week: 'Diese Woche: {{range}}',
+    emptyTitle: 'Noch kein Wochenplan',
+    emptyBody: 'Hier entsteht bald dein Plan für sieben Tage – mit Frühstück, Mittag- und Abendessen, passend zu deinem Budget.',
+    generate: 'Wochenplan erstellen',
+    breakfast: 'Frühstück',
+    lunch: 'Mittagessen',
+    dinner: 'Abendessen',
+  },
+  recipes: {
+    title: 'Rezepte',
+    subtitle: 'Einfache, günstige Familienrezepte',
+    emptyTitle: 'Rezepte folgen in Kürze',
+    emptyBody: 'Wir bereiten gerade über 50 alltagstaugliche Rezepte für dich vor – von Klassikern bis zu schnellen Gerichten für Kinder.',
+    filters: {
+      vegetarian: 'Vegetarisch',
+      quick: 'Schnell',
+      kidFriendly: 'Kinderfreundlich',
+      highProtein: 'Proteinreich',
+      budget: 'Günstig',
+    },
+  },
+  shopping: {
+    title: 'Einkaufsliste',
+    emptyTitle: 'Deine Einkaufsliste ist leer',
+    emptyBody: 'Sobald du einen Wochenplan hast, erstellen wir daraus automatisch deine Einkaufsliste – sortiert nach Supermarkt-Bereichen.',
+  },
+  profile: {
+    title: 'Profil',
+    sectionAccount: 'Konto',
+    signIn: 'Anmelden oder registrieren',
+    sectionHousehold: 'Haushalt',
+    household: 'Haushalt & Budget',
+    preferences: 'Ernährung & Allergien',
+    supermarkets: 'Bevorzugte Supermärkte',
+    sectionInfo: 'Rechtliches & Infos',
+    priceInfo: 'Wie wir Preise berechnen',
+    privacy: 'Datenschutzerklärung',
+    imprint: 'Impressum',
+    terms: 'Nutzungsbedingungen',
+    version: 'Version {{version}}',
+    sectionDeveloper: 'Entwickler-Infos',
+    supabaseStatus: 'Datenbank-Verbindung',
+    statusConnected: 'Verbunden',
+    statusNotConfigured: 'Nicht eingerichtet',
+    statusUnreachable: 'Nicht erreichbar',
+    statusChecking: 'Wird geprüft …',
+  },
+  legal: {
+    draftNotice: 'Platzhalter – dieser Text wird vor dem Start von einer qualifizierten Fachperson erstellt und geprüft.',
+    privacyTitle: 'Datenschutzerklärung',
+    imprintTitle: 'Impressum',
+    termsTitle: 'Nutzungsbedingungen',
+    priceInfoTitle: 'Wie wir Preise berechnen',
+    priceInfoBody:
+      'Alle Preise in der App sind Schätzwerte. Sie beruhen auf einer von uns gepflegten Preisliste mit Quelle und Datum und können im Markt abweichen. Aktuelle Angebote und regionale Unterschiede sind nicht berücksichtigt. Vergleiche zwischen Supermärkten sind Näherungswerte, wenn die Produkte nicht genau gleich sind.',
+    allergenNotice:
+      'Allergen-Angaben ohne Gewähr. Bitte prüfe immer die Zutatenliste auf der Verpackung.',
+  },
+  notFound: {
+    title: 'Seite nicht gefunden',
+    body: 'Diese Seite gibt es leider nicht.',
+    home: 'Zur Übersicht',
+  },
+} as const;
